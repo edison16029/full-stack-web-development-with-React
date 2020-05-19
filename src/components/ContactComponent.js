@@ -15,7 +15,6 @@ class Contact extends Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.validate = this.validate.bind(this);
         
     }
 
@@ -23,10 +22,6 @@ class Contact extends Component {
     handleSubmit(values) {
         console.log('Current State is: ' + JSON.stringify(values));
         alert('Current State is: ' + JSON.stringify(values));
-    }
-    validate(firstname,lastname,telnum,email) {
-
-
     }
 
     render() {
@@ -75,7 +70,7 @@ class Contact extends Component {
                    </div>
                     <div className="col-12 col-md-9">
                         <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
-                                                        <Row className="form-group">
+                            <Row className="form-group">
                                 <Label htmlFor="firstname" md={2}>First Name</Label>
                                 <Col md={10}>
                                     <Control.text model=".firstname" id="firstname" name="firstname"

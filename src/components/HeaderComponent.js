@@ -61,7 +61,7 @@ class Header extends Component {
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
                                     <Button outline onClick={this.toggleModal}>
-                                        <span className="fa fa-sign-in fa-lg"></span>
+                                        <span className="fa fa-sign-in fa-lg"> Logout</span>
                                     </Button>
                                 </NavItem>
                             </Nav>
@@ -81,7 +81,7 @@ class Header extends Component {
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalHeader>Login</ModalHeader>
                     <ModalBody>
-                                                <Form onSubmit={this.handleLogin}>
+                        <Form onSubmit={this.handleLogin}>
                             <FormGroup>
                                 <Label htmlFor="username">Username</Label>
                                 <Input type="text" id="username" name="username"
