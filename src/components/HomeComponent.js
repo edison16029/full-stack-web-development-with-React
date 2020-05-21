@@ -7,19 +7,21 @@ import { FadeTransform } from 'react-animation-components';
 
 
 function RenderCard({item,isLoading,errMessage}) {
-
+	
     if(isLoading){
+    	console.log("Render Card in Home Component is Loading")
         return (
             <Loading />
         )
     }
     else if(errMessage){
+    	console.log("Render Card in Home Component is Error")
         return (
             <h4>{errMessage}</h4>
         );
     }
     else{
-
+    	console.log("Render Card in Home Component is rendering")
         return(
             <FadeTransform
                 in transformProps={{
@@ -44,16 +46,22 @@ function Home(props) {
         <div className="container">
             <div className="row align-items-start">
                 <div className="col-12 col-md m-1">
+                	{console.log("Render Card in Home Component Called for Dishes = ",props.dish, " isLoading : ", props.dishesLoading,
+                		" errMessage : ",props.dishesErrMess)}
                     <RenderCard item={props.dish} 
                         isLoading={props.dishesLoading}
                         errMessage={props.dishesErrMess} />
                 </div>
                 <div className="col-12 col-md m-1">
+                {console.log("Render Card in Home Component Called for Promotions = ",props.promotion, " isLoading : ", props.promotionsLoading,
+                		" errMessage : ",props.promotionsErrMess)}
                     <RenderCard item={props.promotion}
                         isLoading={props.promotionsLoading}
                         errMessage={props.promotionsErrMess} />
                 </div>
                 <div className="col-12 col-md m-1">
+                {console.log("Render Card in Home Component Called for Leaders = ",props.leader, " isLoading : ", props.leadersLoading,
+                		" errMessage : ",props.leadersErrMess)}
                     <RenderCard item={props.leader} 
                         isLoading={props.leadersLoading}
                         errMessage={props.leadersErrMess}/>
