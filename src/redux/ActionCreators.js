@@ -55,8 +55,8 @@ export const fetchDishes = () => (dispatch) => { //This is a Thunk which perform
 					throw error;
 				}
 			}, error => {
-				var error = new Error(error.message);
-				throw error;
+				var errMess = new Error(error.message);
+				throw errMess;
 			})
 			.then(response => response.json())
 			.then(dishes => dispatch(addDishes(dishes)))
@@ -91,8 +91,8 @@ export const fetchPromotions = () => (dispatch) => { //This is a Thunk which per
 					throw error;
 				}
 			}, error => {
-				var error = new Error(error.message);
-				throw error;
+				var errMess = new Error(error.message);
+				throw errMess;
 			})
 			.then(response => response.json())
 			.then(promotions => dispatch(addPromotions(promotions)))
@@ -126,8 +126,8 @@ export const fetchComments = () => (dispatch) => { //This is a Thunk which perfo
 					throw error;
 				}
 			}, error => {
-				var error = new Error(error.message);
-				throw error;
+				var errMess = new Error(error.message);
+				throw errMess;
 			})		
 			.then(response => response.json())
 			.then(comments => dispatch(addComments(comments)))
@@ -153,13 +153,13 @@ export const fetchLeaders = () => (dispatch) => {
 					return response;
 				}
 				else {
-					var error = new Error("Error " + response.status + " : " + response.statusText);
-					error.response = response;
-					throw error;
+					var errMess = new Error("Error " + response.status + " : " + response.statusText);
+					errMess.response = response;
+					throw errMess;
 				}
 			}, error => {
-				var error = new Error(error.message);
-				throw error;
+				var errMess = new Error(error.message);
+				throw errMess;
 			})
 			.then(response => response.json())
 			.then(leaders => dispatch(addLeaders(leaders)))

@@ -36,10 +36,6 @@ const mapDispatchToProps = dispatch => ({
 
 class Main extends Component {
 
-  constructor(props){
-    super(props);
-  }
-
   componentDidMount() { //Lifecycle Method, will be called as soon as Component is mounted to view.
     console.log("Fetching ");
     this.props.fetchDishes();
