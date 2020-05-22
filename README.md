@@ -2,11 +2,11 @@
 
 This project is based on the following course work
 - "Full-Stack Web Development with React" by "THE HONG KONG UNIVERSITY OF SCIENCE AND TECHNOLOGY" , a 4 Course Specialisation.
-Course 1 : Front-End Web UI Frameworks and Tools: Bootstrap 4 \n
-Course 2 : Front-End Web Development with React \n
-Course 3 : Multiplatform Mobile App Development with React Native \n 
-Course 4 : Server-side Development with NodeJS, Express and MongoDB \n
-Link : https://www.coursera.org/programs/ssn-college-of-engineering-on-coursera-3vm49/browse?productId=x8mwvRC8EeiB6Qq6n4PnfA&productType=s12n&query=Full-Stack+Web+Development+with+React&showMiniModal=true
+-- Course 1 : Front-End Web UI Frameworks and Tools: Bootstrap 4
+-- Course 2 : Front-End Web Development with React \n
+-- Course 3 : Multiplatform Mobile App Development with React Native \n 
+-- Course 4 : Server-side Development with NodeJS, Express and MongoDB \n
+- Link : https://www.coursera.org/programs/ssn-college-of-engineering-on-coursera-3vm49/browse?productId=x8mwvRC8EeiB6Qq6n4PnfA&productType=s12n&query=Full-Stack+Web+Development+with+React&showMiniModal=true
 
 # confusion 
 This folder is the working directory of the Course 2 - React Web App.
