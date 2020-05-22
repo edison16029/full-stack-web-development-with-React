@@ -1,7 +1,7 @@
 # Full-Stack-Web-Development-with-React
 
-This project is based on the following course work - \n
-"Full-Stack Web Development with React" by "THE HONG KONG UNIVERSITY OF SCIENCE AND TECHNOLOGY" , a 4 Course Specialisation. \n
+This project is based on the following course work
+- "Full-Stack Web Development with React" by "THE HONG KONG UNIVERSITY OF SCIENCE AND TECHNOLOGY" , a 4 Course Specialisation.
 Course 1 : Front-End Web UI Frameworks and Tools: Bootstrap 4 \n
 Course 2 : Front-End Web Development with React \n
 Course 3 : Multiplatform Mobile App Development with React Native \n 
