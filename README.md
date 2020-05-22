@@ -8,7 +8,7 @@ This project is based on the following course work
 - Course 4 : Server-side Development with NodeJS, Express and MongoDB 
 - Link : https://www.coursera.org/programs/ssn-college-of-engineering-on-coursera-3vm49/browse?productId=x8mwvRC8EeiB6Qq6n4PnfA&productType=s12n&query=Full-Stack+Web+Development+with+React&showMiniModal=true
 
-# confusion 
+# React/confusion 
 This folder is the working directory of the Course 2 - React Web App.
 
 # json-server
