@@ -18,7 +18,8 @@ function RenderItem(props) {
                 image={require('./images/uthappizza.png')}>
                 <Text
                     style={{margin: 10}}>
-                    {item.description}</Text>
+                    {item.description}
+                </Text>
             </Card>
         );
     }
@@ -28,7 +29,7 @@ function RenderItem(props) {
 }
 
 
-class Home extends Component {
+class HomeComponent extends Component {
 
     constructor(props) {
         super(props);
@@ -53,4 +54,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default HomeComponent;
