@@ -26,7 +26,8 @@ function RenderItem(props) {
     else if(props.errMess){
         return(
             <View> 
-                <Text>{props.erreMess}</Text>
+                <Text>Error</Text>
+                <Text>{props.errMess}</Text>
             </View>
         );
     }

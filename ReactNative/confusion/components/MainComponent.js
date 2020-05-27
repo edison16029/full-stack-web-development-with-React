@@ -5,6 +5,8 @@ import ContactComponent from './ContactComponent';
 import HomeComponent from  './HomeComponent';
 import AboutComponent from './AboutComponent';
 import Reservation from './ReservationComponent';
+import Favourite from './FavouriteComponent';
+
 import { View, Platform, Text, ScrollView, Image, StyleSheet } from 'react-native';
 import { createStackNavigator, createDrawerNavigator, DrawerItems, SafeAreaView } from 'react-navigation';
 import { Icon } from 'react-native-elements';
@@ -116,6 +118,22 @@ const ReservationNavigator = createStackNavigator({ //Created To obtain the Titl
   })
 });
 
+const FavouritesNavigator = createStackNavigator({ //Created To obtain the Title Bar
+  Favourite : { screen: Favourite }
+}, {
+  navigationOptions: ({ navigation }) => ({
+    headerStyle: {
+        backgroundColor: "#512DA8"
+    },
+    headerTitleStyle: {
+        color: "#fff"            
+    },
+    headerTintColor: "#fff",
+    headerLeft : <Icon name="menu" size={24} color='white' 
+        onPress= {() => navigation.toggleDrawer() }/>  
+  })
+});
+
 const CustomDrawerContentComponent = (props) => (
   <ScrollView>
     <SafeAreaView style={styles.container} forceInset={{ top: 'always', horizontal: 'never' }}>
@@ -198,6 +216,20 @@ const MainNavigator = createDrawerNavigator({
           drawerIcon: ({ tintColor, focused }) => (
             <Icon
               name='cutlery'
+              type='font-awesome'            
+              size={24}
+              color={tintColor}
+            /> )
+        }, 
+      },
+      Favourite: 
+      { screen: FavouritesNavigator,
+        navigationOptions: {
+          title: 'My Favourites',
+          drawerLabel: 'My Favourites',
+          drawerIcon: ({ tintColor, focused }) => (
+            <Icon
+              name='heart'
               type='font-awesome'            
               size={24}
               color={tintColor}

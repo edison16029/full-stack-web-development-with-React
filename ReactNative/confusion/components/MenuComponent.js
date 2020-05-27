@@ -15,6 +15,9 @@ const mapStateToProps = state => {
 class MenuComponent extends Component{
 
 
+    constructor(props){
+        super(props);
+    }
     static navigationOptions = {
         title: 'Menu'
     };
@@ -42,7 +45,7 @@ class MenuComponent extends Component{
         else if(this.props.dishes.errMess){
             return(
                 <View>            
-                    <Text>{props.dishes.errMess}</Text>
+                    <Text>{this.props.dishes.errMess}</Text>
                 </View>            
             );
         }
