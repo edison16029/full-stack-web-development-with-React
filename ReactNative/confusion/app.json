@@ -3,13 +3,22 @@
   "displayName": "confusion",
   "expo": {
     "name": "confusion",
-    "slug": "expo-template-bare",
+    "slug": "confusion",
     "version": "1.0.0",
+    "icon": "./icon.png",
     "platforms": [
       "ios",
       "android",
       "web"
     ],
+    "ios": {
+      "bundleIdentifier": "com.edison.confusion",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.edison.confusion",
+      "versionCode": 1
+    },
     "assetBundlePatterns": [
       "**/*"
     ]
