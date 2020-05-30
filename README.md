@@ -11,6 +11,11 @@ This project is based on the following course work
 # React/confusion 
 This folder is the working directory of the Course 2 - React Web App.
 
+# ReactNative/confusion 
+This folder is the working directory of the Course 3 - React Native Hybrid Mobile App.
+The parent folder contains the apk.
+If you want to run the app on Expo Client, goto : https://expo.io/@edison16029/confusion
+
 # json-server
 This folder is the json server set up for development purpose.
 To run the React Web App, start this server as 
