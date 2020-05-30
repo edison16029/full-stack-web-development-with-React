@@ -149,9 +149,26 @@ class RegisterTab extends Component {
             });
             if (!capturedImage.cancelled) {
                 console.log(capturedImage);
-                // this.setState({imageUrl: capturedImage.uri });
                 this.processImage( capturedImage.uri);
             }
+        }
+
+    }
+
+    getImageFromGallery =  async () => {
+        const cameraRollPermission = await Permissions.askAsync(Permissions.CAMERA_ROLL);
+
+        if(cameraRollPermission.status === 'granted'){
+            let chosenImage = await ImagePicker.launchImageLibraryAsync({
+                mediaTypes: ImagePicker.MediaTypeOptions.All,
+                allowsEditing: true,
+                aspect: [4, 3],
+                quality: 1,
+            });
+            if (!chosenImage.cancelled) {
+                this.processImage( chosenImage.uri );
+            }
+            console.log(chosenImage);
         }
 
     }
@@ -201,6 +218,10 @@ class RegisterTab extends Component {
                     <Button
                         title="Camera"
                         onPress={this.getImageFromCamera}
+                        />
+                    <Button
+                        title="Gallery"
+                        onPress={this.getImageFromGallery}
                         />
                 </View>
                 <Input
