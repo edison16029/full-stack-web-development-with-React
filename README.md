@@ -10,6 +10,9 @@ This project is based on the following course work
 
 # React/confusion 
 This folder is the working directory of the Course 2 - React Web App.
+The WebApp is hosted using an Amazon S3 Bucket and the data is served using a JsonServer through Heroku.
+Link : http://reactlearningconfusionwebapp.s3-website.ap-south-1.amazonaws.com
+Json - Server link : https://react-confusion-web-app.herokuapp.com/
 
 # ReactNative/confusion 
 This folder is the working directory of the Course 3 - React Native Hybrid Mobile App.
